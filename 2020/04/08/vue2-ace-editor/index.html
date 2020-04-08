@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>web | Hexo</title>
+  <title>vue在线编辑插件vue2-ace-editor | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="[TOC] gulp 集成静态文件服务器  现在前端开发非脚手架项目时 , 启动服务器的方式五花八门  ( npm+http-server 或者 webstorm的63342  )，事实上我们可以使用gulp来集成静态文件服务器 全局安装gulp1npm install --global  gulp  在项目目录里作为开发依赖安装1npm install --save-dev gulp  安装gu">
+  <meta name="description" content="[TOC] 介绍ace是一个智能语法提示和高亮显示插件，本文主要介绍vue2-ace-editor在vue项目中的使用 安装vue2-ace-editor包执行命令 npm install vue2-ace-editor，安装vue2-ace-editor包； 使用话不多说，直接上代码 12345678910111213141516171819202122232425262728293031323">
 <meta property="og:type" content="article">
-<meta property="og:title" content="web">
-<meta property="og:url" content="http://yoursite.com/2019/10/12/web/index.html">
+<meta property="og:title" content="vue在线编辑插件vue2-ace-editor">
+<meta property="og:url" content="http://yoursite.com/2020/04/08/vue2-ace-editor/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="[TOC] gulp 集成静态文件服务器  现在前端开发非脚手架项目时 , 启动服务器的方式五花八门  ( npm+http-server 或者 webstorm的63342  )，事实上我们可以使用gulp来集成静态文件服务器 全局安装gulp1npm install --global  gulp  在项目目录里作为开发依赖安装1npm install --save-dev gulp  安装gu">
+<meta property="og:description" content="[TOC] 介绍ace是一个智能语法提示和高亮显示插件，本文主要介绍vue2-ace-editor在vue项目中的使用 安装vue2-ace-editor包执行命令 npm install vue2-ace-editor，安装vue2-ace-editor包； 使用话不多说，直接上代码 12345678910111213141516171819202122232425262728293031323">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-04-08T01:30:45.884Z">
+<meta property="og:updated_time" content="2020-04-08T01:27:56.367Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="web">
-<meta name="twitter:description" content="[TOC] gulp 集成静态文件服务器  现在前端开发非脚手架项目时 , 启动服务器的方式五花八门  ( npm+http-server 或者 webstorm的63342  )，事实上我们可以使用gulp来集成静态文件服务器 全局安装gulp1npm install --global  gulp  在项目目录里作为开发依赖安装1npm install --save-dev gulp  安装gu">
+<meta name="twitter:title" content="vue在线编辑插件vue2-ace-editor">
+<meta name="twitter:description" content="[TOC] 介绍ace是一个智能语法提示和高亮显示插件，本文主要介绍vue2-ace-editor在vue项目中的使用 安装vue2-ace-editor包执行命令 npm install vue2-ace-editor，安装vue2-ace-editor包； 使用话不多说，直接上代码 12345678910111213141516171819202122232425262728293031323">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -162,20 +162,20 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-web" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-vue2-ace-editor" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      web
+      vue在线编辑插件vue2-ace-editor
     </h1>
   
 
         
-        <a href="/2019/10/12/web/" class="archive-article-date">
-  	<time datetime="2019-10-12T08:46:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-12</time>
+        <a href="/2020/04/08/vue2-ace-editor/" class="archive-article-date">
+  	<time datetime="2020-04-08T01:06:01.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-08</time>
 </a>
         
       </header>
@@ -186,17 +186,18 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>[TOC]</p>
-<h4 id="gulp-集成静态文件服务器"><a href="#gulp-集成静态文件服务器" class="headerlink" title="gulp 集成静态文件服务器"></a>gulp 集成静态文件服务器</h4><p>  现在前端开发非脚手架项目时 , 启动服务器的方式五花八门  ( npm+http-server 或者 webstorm的63342  )，事实上我们可以使用gulp来集成静态文件服务器</p>
-<h5 id="全局安装gulp"><a href="#全局安装gulp" class="headerlink" title="全局安装gulp"></a>全局安装gulp</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --global  gulp</span><br></pre></td></tr></table></figure>
+<h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p>ace是一个智能语法提示和高亮显示插件，本文主要介绍vue2-ace-editor在vue项目中的使用</p>
+<h2 id="安装vue2-ace-editor包"><a href="#安装vue2-ace-editor包" class="headerlink" title="安装vue2-ace-editor包"></a>安装vue2-ace-editor包</h2><p>执行命令 npm install vue2-ace-editor，安装vue2-ace-editor包；</p>
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>话不多说，直接上代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">  &lt;editor</span><br><span class="line">    id=&quot;code_area&quot;</span><br><span class="line">    v-model=&quot;content&quot;</span><br><span class="line">    @init=&quot;editorInit&quot;</span><br><span class="line">    lang=&quot;html&quot;</span><br><span class="line">    theme=&quot;tomorrow_night_blue&quot;</span><br><span class="line">    width=&quot;100%&quot;</span><br><span class="line">    height=&quot;100%&quot;</span><br><span class="line">  &gt;&lt;/editor&gt;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">import oneView from &apos;../../static/one.html&apos;;</span><br><span class="line">export default &#123;</span><br><span class="line">  components: &#123;</span><br><span class="line">    editor: require(&apos;vue2-ace-editor&apos;)</span><br><span class="line">  &#125;,</span><br><span class="line">  data () &#123;</span><br><span class="line">    return &#123;</span><br><span class="line">      content: oneView</span><br><span class="line">    &#125;;</span><br><span class="line">  &#125;,</span><br><span class="line">  methods: &#123;</span><br><span class="line">    editorInit: function () &#123;</span><br><span class="line">      require(&apos;brace/ext/language_tools&apos;);</span><br><span class="line">      require(&apos;brace/mode/html&apos;);</span><br><span class="line">      require(&apos;brace/mode/javascript&apos;);</span><br><span class="line">      require(&apos;brace/mode/less&apos;);</span><br><span class="line">      require(&apos;brace/theme/tomorrow_night_blue&apos;);</span><br><span class="line">      require(&apos;brace/snippets/javascript&apos;);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&lt;style&gt;&lt;/style&gt;</span><br></pre></td></tr></table></figure>
 
-<h5 id="在项目目录里作为开发依赖安装"><a href="#在项目目录里作为开发依赖安装" class="headerlink" title="在项目目录里作为开发依赖安装"></a>在项目目录里作为开发依赖安装</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save-dev gulp</span><br></pre></td></tr></table></figure>
+<p>其中 content的属性值可以是字符串，也可以引入一个文件，比如 import oneView from ‘./one.html’;</p>
+<h2 id="获取代码"><a href="#获取代码" class="headerlink" title="获取代码"></a>获取代码</h2><p>在很多使用场景中，我们可能需要导出或下载ace代码编译器区域中的代码，使用getValue()方法即可获取。</p>
+<p>具体使用：</p>
+<p>1、引入brace<br>var ace = require(‘brace’);</p>
+<p>2、获取代码<br>var content = ace.edit(‘code_area’).getValue();</p>
+<p>其中code_area是编译区域的id;</p>
 
-<h5 id="安装gulp-connect"><a href="#安装gulp-connect" class="headerlink" title="安装gulp-connect"></a>安装gulp-connect</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i -D gulp-connect</span><br></pre></td></tr></table></figure>
-
-<h5 id="在项目文件下新建一个gulpfile-js文件"><a href="#在项目文件下新建一个gulpfile-js文件" class="headerlink" title="在项目文件下新建一个gulpfile.js文件"></a>在项目文件下新建一个gulpfile.js文件</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">var gulp = require(&apos;gulp&apos;);</span><br><span class="line">var connect = require(&apos;gulp-connect&apos;);</span><br><span class="line">gulp.task(&apos;server&apos;, function () &#123;</span><br><span class="line">connect.server(&#123;</span><br><span class="line">  root: &apos;./&apos;, // 这里填根目录的路径</span><br><span class="line">  livereload: true,</span><br><span class="line">  port: 8080</span><br><span class="line"> &#125;);</span><br><span class="line">&#125;);</span><br><span class="line">gulp.task(&apos;default&apos;, [&apos;server&apos;]);</span><br></pre></td></tr></table></figure>
-
-<h5 id="启动服务器"><a href="#启动服务器" class="headerlink" title="启动服务器"></a>启动服务器</h5><p>1.命令行输入gulp;<br>2.或者在package.json文件中修改相关配置后（如下）执行npm run dev 启动服务器</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&quot;scripts&quot;: &#123;</span><br><span class="line">&quot;dev&quot;: &quot;gulp&quot;</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
       
 
       
@@ -281,7 +282,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/10/12/web/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/04/08/vue2-ace-editor/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -295,15 +296,11 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/10/12/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          个人主页
-        
-      </div>
-    </a>
   
+    <a href="/2020/04/07/codeRun/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">代码在线运行方案</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 
